@@ -1,0 +1,227 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Admins page of prelibcs mcq test
+  </title>
+  <link rel="icon" type="image/icon" href="images\bcs.png">
+  <link rel="stylesheet" href="admin.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta property="og:title" content="BCS Preliminary MCQ Test" />
+    <meta property="og:type" content="BCS Preliminary" />
+    <meta property="og:description" content="Here the website named prelibcsmcqtest is made for those who are trying to find online resources to get prepare for bcs examination" />
+    <meta property="og:url" content="https://prelibcsmcqtest.firebaseapp.com/" />
+    <meta property="og:image" content="https://prelibcsmcqtest.firebaseapp.com/images/allbcs.jpg" />
+    <script data-ad-client="ca-pub-6614834939916976" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body>
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6614834939916976"
+     data-ad-slot="5658890364"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            
+  <div id="totaldiv" style="display: none">
+
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="txt2" href="index.html">Back to Home</a>
+          <a class="txt2" href="#"
+            onclick="closeOtherDiv(),document.getElementById('1').style.display='block',setSelected(1)">Notices</a>
+          <a class="txt2" href="#"
+            onclick="closeOtherDiv(),document.getElementById('2').style.display='block',setSelected(2)">Contacts</a>
+          <a class="txt2" href="#"
+            onclick="closeOtherDiv(),document.getElementById('3').style.display='block',setSelected(3)">Previous Year
+            Questions</a>
+          <a class="txt2" href="#"
+            onclick="closeOtherDiv(),document.getElementById('4').style.display='block',setSelected(4)">Subjective
+            Questions</a>
+          <a class="txt2" href="#">Guideline </a>
+          <a class="txt2" href="#"
+            onclick="closeOtherDiv(),document.getElementById('6').style.display='block',setSelected(6)">Quick Test</a>
+          <a class="txt2" href="#"
+            onclick="closeOtherDiv(),document.getElementById('7').style.display='block',setSelected(7)">Model Test</a>
+          <a class="txt2" href="#"onclick="closeOtherDiv(),document.getElementById('7').style.display='block',setSelected(7)">Competetive Test</a>
+          <a class="txt2" href="#"href="#"onclick="closeOtherDiv(),document.getElementById('9').style.display='block',setSelected(9)"> Today's Visit</a>
+        </div>
+      
+        <div id="main">
+          <span class="txt" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Settings</span>
+          <p class="txt">Click side nevigation bar to see options</p>
+          <h2 class="txt3">Administrator's works</h2>
+      
+          <div class="txt4" id="1" style="display:none">
+            <h3>Add a notice</h3>
+            <input id="noticetext" class="textnotice" type="text" placeholder="Enter the notice" name="email" required>
+            <br>
+            <button class="savenot" type="button" onclick="saveNotice()">Save Notice</button>
+          </div>
+          <div id="2" class="txt4" style="display:none">
+            <h3>Messages from the users</h3>
+          </div>
+          <div id="3" class="txt4" style="display:none">
+            <h3>Enter the number of BCS preliminary exam which you want to enter</h3>
+            <input class="txt5" id="number_preli" type="number" placeholder="10-39" required>
+            <h3>Place the questions here</h3>
+            <textarea class="textpreli" id="questions_preli"></textarea>
+            <button class="savenot" type="button" onclick="savePreviousQuestions()"> Save Questions</button>
+          </div>
+          <div id="4" class="txt4" style="display:none">
+      
+            <h3>Select the subject</h3>
+            <select name="subject" id="subject">
+              <option value="1">বাংলাদেশ বিষয়াবলী</option>
+              <option value="2">আন্তর্জাতিক বিষয়াবলী</option>
+              <option value="3">ভূগোল বিষয়াবলী</option>
+              <option value="4">বাংলা সাহিত্য</option>
+              <option value="5">সাধারন বিজ্ঞান</option>
+              <option value="6">গাণিতিক বিষয়াবলী</option>
+              <option value="7">শব্দ সংক্ষেপণ</option>
+              <option value="8">English</option>
+              <option value="9">Vocabulary</option>
+              <option value="10">ICT</option>
+              <option value="10">মানসিক দক্ষতা</option>
+              <option value="10">অন্যান্য</option>
+            </select>
+      
+            <h3>Place the questions here</h3>
+            <textarea class="textpreli" id="questions_sub"></textarea>
+            <button class="savenot" type="button" onclick="saveSubjective()"> Save Questions</button>
+          </div>
+          <div id="6" class="txt4" style="display:none">
+            <h3>Add Question here</h3>
+            <textarea class="textquick" id="questions_quick"></textarea><br><br>
+            <input class="txt5" id="a" placeholder="option a" required><br><br>
+            <input class="txt5" id="b" placeholder="option b" required><br><br>
+            <input class="txt5" id="c" placeholder="option c" required><br><br>
+            <input class="txt5" id="d" placeholder="option d" required><br><br>
+            <input class="txt5" id="ans" placeholder="Answer (a or b or c or d)" required><br><br>
+            <button class="savenot" type="button" onclick="saveQuickTestQuestions()"> Save Questions</button>
+          </div>
+      
+          <div id="7" class="txt4" style="display:none">
+            <h3>Add Model Test Question here</h3>
+            <input placeholder="Model Test Number" type="number" id="test"><br><br>
+      
+          </div>
+          <div id="9" class="txt4" style="display: none">
+              <h3>Today's Visit</h3>
+              <div id="today_visit"></div>
+          </div>
+        </div>
+      
+
+  </div>
+
+  
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAAqY3AyFDZWxMuVEL86c2UVjovNgouxo0",
+      authDomain: "prelibcsmcqtest.firebaseapp.com",
+      databaseURL: "https://prelibcsmcqtest.firebaseio.com",
+      projectId: "prelibcsmcqtest",
+      storageBucket: "prelibcsmcqtest.appspot.com",
+      messagingSenderId: "825983005556"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script>
+     firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        if(user.uid=="sWcBS3x7xPYtLe24IqqMPj2GMxx2"){
+          document.getElementById('totaldiv').style.display="block";
+        }
+
+      } else {
+        document.getElementById('totaldiv').style.display="none"; 
+
+      }
+    });
+  </script>
+  <script>
+    var DatabaseRef = firebase.database().ref('/Contact');
+    DatabaseRef.on('value', function (snapshot) {
+      snapshot.forEach(function (childSnapshot) {
+        var childData = childSnapshot.val();
+        document.getElementById("2").innerHTML += "<p> <b> Name:  </b>" + childData.Name + "</p>" + "<p><b> Email:  </b>" + childData.Email + "</p>" + "<p> <b> Phone no.:  </b>" + childData.Phone + "</p>" + "<p> <b> Messege:  </b>" + childData.Message + "</p><br>";
+      });
+    }); 
+  </script>
+  <script>
+    var i = 1;
+    var j=1;
+    for (i = 1; i <= 100; i++) {
+      if (i % 25 == 1) {
+        document.getElementById("7").innerHTML += "<select name=\"subject_modeltest\" id=\"sub"+i+"\">" +
+          "<option value=\"1\">Bangla</option>" +
+          "<option value=\"2\">English</option>" +
+          "<option value=\"3\">General Knowledge</option>" +
+          "<option value=\"4\">Math</option>" +
+          "</select>" +
+          "<br><br>"
+
+      }
+      document.getElementById("7").innerHTML +=" <input id=\"qesmodel"+i+"\" placeholder=\""+i+"\"type=\"number\" readonly><br><br>"+
+      " <textarea class=\"textquick\" id=\"qes"+i+"\"></textarea><br><br>" +
+        "<input class=\"txt5\" id=\"a"+i+"\" placeholder=\"option a\" required><br><br>" +
+        "<input class=\"txt5\" id=\"b"+i+"\" placeholder=\"option b\" required><br><br>" +
+        "<input class=\"txt5\" id=\"c"+i+"\" placeholder=\"option c\" required><br><br>" +
+        "<input class=\"txt5\" id=\"d"+i+"\" placeholder=\"option d\" required><br><br>" +
+        "<input class=\"txt5\" id=\"ans"+i+"\" placeholder=\"Answer (a or b or c or d)\" required><br><br>"
+
+        
+    }
+    document.getElementById("7").innerHTML +="<button class=\"savenot\" type=\"button\" onclick=\"saveModelTestQuestions()\"> Save Questions</button>";
+  </script>
+  <script >
+    var date=new Date();
+      var time = date.getTime();
+      time= time - (time % 86400000);
+      var totalVisits=0;
+      var distinctVisitor=0;
+      var DatabaseRef = firebase.database().ref('/VisitsCounter/'+time);
+      DatabaseRef.on('value', function (snapshot) {
+        snapshot.forEach(function (childSnapshot) {
+           distinctVisitor++;
+            document.getElementById('9').innerHTML+="<p>Ip Address ___________ "+ childSnapshot.val().ip+"__________Visited Time___________"+childSnapshot.val().vdate+"</p>\n Visited pages:\n";
+           childSnapshot.forEach(function (childSnapshot2){
+               totalVisits++;
+               if(typeof childSnapshot2.val().visitpage!="undefined")
+               document.getElementById('9').innerHTML+="<p> "+childSnapshot2.val().visitpage+" </p>\n<p>";
+           });
+        });
+                  totalVisits-=distinctVisitor*2;
+                  document.getElementById('today_visit').innerHTML+="<p>Total Visits today "+ totalVisits+"____________Total Visitor today "+distinctVisitor+"</p>";
+
+      });
+
+  </script>
+  <script type="text/javascript" src="admin.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6614834939916976"
+     data-ad-slot="3573605625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</body>
+
+</html>

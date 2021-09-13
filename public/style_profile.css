@@ -1,0 +1,189 @@
+html{
+    scroll-behavior: smooth;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+   background-image: url("images/p_back.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+    margin:0px;
+    padding:0px;
+    background-color: black;
+}
+.topdiv {
+    height: 50px;
+    width: 100%;
+    min-width: 1140px;
+    background-color:rgba(175, 175, 166, 0.342);
+  }
+  img.back{
+      float: left;
+      height: 40px;
+      width: 80px;
+      margin-left: 20px;
+      margin-top: 5px;
+  }
+  .profile{
+      float: left;
+      height: 300px;
+      width: 300px;
+      margin-left: 5px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      margin-right: 50px;
+  }
+  h3,p.w{
+  	color: white;
+  }
+  h3.b{
+  	color: black;
+  }
+  h3.back{
+      float:left;
+      color: white;
+      margin-left: 15px;
+      margin-top: 15px; 
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column1 {
+    float: left;
+    width: 40%;
+    padding: 10px;
+  }
+  .column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  @media only screen and (max-width:800px) {
+    .column1 {
+      width: 80%;
+      padding: 10px;
+    }
+    .column2 {
+      width: 100%;
+      padding: 0px;
+      overflow-x: scroll;
+    }
+  }
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    width: 310px;
+    margin-left: 100px;
+    background-color: white;
+  }
+  @media only screen and (max-width:500px) {
+    .card{
+          margin-left: 20px;
+
+    }
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 20px 20px;
+  }
+  .name{
+    margin-bottom: 10px;
+  }
+  .probio{
+    margin:5px;
+  }
+  .biop{
+      size: 16px;
+  }
+  .biotextarea{
+     width: 300px;
+     height: 50px;;
+  }
+  hr{
+      background-color: white;
+  }
+  table, th, td {
+    border: 1px solid blue;
+    border-color: blue;
+    color: white;
+  }
+  .propicchoose{
+    color: blueviolet;
+    margin:5px;
+  }
+  .footerdiv {
+    width: 100%;
+    height: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
+    background-color:rgba(175, 175, 166, 0.342);
+    padding-bottom: 30px;
+  }
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .footerdiv {
+      width: 95%;
+      padding-bottom: 30px;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .footerdiv {
+      width: 80%;
+      margin-top:60px;
+    }
+  }
+  .img_fixed {
+  position: fixed;
+}
+.img_shake{
+  height: 50px;
+  width: 50px;
+  padding-right:70px;
+}
+@media screen and (max-width:500px){
+  .img_shake{
+    height: 50px;
+    width: 50px;
+    padding-right:2px;
+  }
+}
+.img_shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+img.fixed{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #73AD21;
+}

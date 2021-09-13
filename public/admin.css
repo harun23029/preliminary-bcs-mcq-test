@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(12, 4, 1);
+  }
+  .txt{
+      color: #f1f1f1;
+  }
+  .txt2{
+      color: rgb(50, 42, 165);
+  }
+  .txt3{
+      padding-left: 500px;
+      padding-top:30px;
+      padding-bottom: 30px;
+      color: #f1f1f1;
+  }
+  .txt4{
+    padding-left: 200px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: #f1f1f1;
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+   .txt3{
+      padding-left: 100px;
+      padding-top:30px;
+      padding-bottom: 30px;
+      color: #f1f1f1;
+  }
+  .txt4{
+    padding-left: 20px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: #f1f1f1;
+  }
+  }
+  .txt5{
+    width: 200px;
+
+  }
+  .textnotice{
+    color: #180303;
+    width: 800px;
+    height: 150px;
+  }
+  .textpreli{
+    color: #180303;
+    width: 1000px;
+    height: 800px;
+  }
+  .textquick{
+    color: #180303;
+    width: 1000px;
+    height: 200px;
+  }
+  .savenot{
+    margin-top: 20px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(53, 20, 8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  

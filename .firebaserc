@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "firebase deploy": "bcs-online-test-eaab7",
+    "staging": "prelibcsmcqtest",
+    "prelibcsmcqtest": "prelibcsmcqtest"
+  }
+}

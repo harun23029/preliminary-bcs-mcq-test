@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="bn" xml:lang="bn">
+
+<head>
+
+    <title>BCS Preliminary MCQ Test modeltest exams
+    </title>
+    <link rel="icon" type="image/icon" href="images\bcs.png">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="BCS Preliminary MCQ Test" />
+      <meta property="og:type" content="BCS Preliminary" />
+      <meta property="og:description" content="Here the website named prelibcsmcqtest is made for those who are trying to find online resources to get prepare for bcs examination" />
+      <meta property="og:url" content="https://prelibcsmcqtest.firebaseapp.com/" />
+      <meta property="og:image" content="https://prelibcsmcqtest.firebaseapp.com/images/allbcs.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
+      <script data-ad-client="ca-pub-6614834939916976" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+</head>
+
+<body oncontextmenu="return false" onload="load();">
+
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+    <div style="padding:20px" class="loader" id="loader"></div>
+
+    <div class="topdiv">
+
+        <a href="admin.html">
+            <button id="admin" class="admin_btn" style="display: none" title="Go to Admin Page"><img class="profile"
+                    src="images/admin.png" style="display:block"></button>
+        </a>
+
+
+        <button id="login_button" class="signin_btn" style="display:none"
+            onclick="document.getElementById('login_form').style.display='block'" ">
+                 <b>Log In</b></button>
+                 <button id="logout_button" class="signin_btn" style="display:none" onclick="logOut()"">
+                     <b>Log Out</b></button>
+               <button id="signup_button" class="signin_btn" style="display:none"
+            onclick="document.getElementById('signup_form').style.display='block'"> <b>Sign Up</b></button>
+        <a href="profile.html">
+            <button id="profile_button" style="display:none" class="profile_btn"><img class="profile"
+                    src="images/pp.jpg">
+                <p><b>Profile</b></p>
+            </button>
+        </a>
+    </div>
+
+    <div class="maindiv" id="top">
+        <img src="images\bcs.png" height="125" width="125">
+        <p>
+            <h1 style="color:beige">Online test for BCS Preliminary</h1>
+        </p>
+    </div>
+    <div class="topnav" id="navbar">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">KNOWLEDGE TEST
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="quicktest.html">Quick Test</a>
+                <a href="modeltest.html" class="active">Model Test</a>
+                <a href="comtest.html">Competetive Test</a>
+            </div>
+
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> QUESTION BANK
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="previousyear.html">Previous Year Questions</a>
+                <a href="subjective.html">Subjective Questions</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> GUIDELINES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="allaboutbcs.html">All About BCS</a>
+                <a href="motivational.html">Motivational Speechs</a>
+            </div>
+        </div>
+        <a href="contact.html">CONTACTS</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>
+
+    </div>
+
+    <script>
+        function myFunction2() {
+            var x = document.getElementById("navbar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <h1>Model Test </h1>
+    <marquee width="100%" direction="left" scrollamount="3" bgcolor="#11ffe0" onmouseover="this.stop();"
+        onmouseout="this.start();">
+        <p>***** If you find any information wrong please inform us in the contact page or you can comment at the bottom of the page ******</p>
+    </marquee>
+    <hr class="hrline3">
+    <div class="row">
+        <div class="homepagecolumn1" style="background-color:rgba(196, 196, 186, 0.133);">
+            <div id="modeltesttext">
+
+                <p style="font-size:18px">These are the model tests designed by prelibcsmcqtest.firebaseapp.com admines
+                    for BCS Preliminary examination.</p>
+                <p><b>Please select a model test from below for BCS preliminary examination practise.(Only Model Test 1
+                        is implemented).<br><br>N.B: You must login for model test exam.</b></p>
+                <br>
+                <div class="modeltestcard">
+                    <p id="0" class="modeltest" onclick="showTest(this.id)"><b>BCS Preliminary Model Test 1</b></p>
+                    <p class="modeltest2">Updated on 29-4-2019</p>
+                </div>
+                <div class="modeltestcard">
+                    <p id="1" class="modeltest"><b>BCS Preliminary Model Test 2</b></p>
+                    <p class="modeltest2">Will Be Updated Soon</p>
+                </div>
+                <div class="modeltestcard">
+                    <p id="2" class="modeltest" "><b>BCS Preliminary Model Test 3</b></p>
+                    <p class=" modeltest2">Will Be Updated Soon</p>
+                </div>
+                <div class="modeltestcard">
+                    <p id="3" class="modeltest" "><b>BCS Preliminary Model Test 4</b></p>
+                    <p class=" modeltest2">Will Be Updated Soon</p>
+                </div>
+               
+            
+                <div class="modeltestcard">
+                    <p id="4" class="modeltest"><b>BCS Preliminary Model Test 5</b></p>
+                    <p class="modeltest2">Will Be Updated Soon</p>
+                </div>
+                <div class="modeltestcard">
+                    <p id="5" class="modeltest"><b>BCS Preliminary Model Test 6</b></p>
+                    <p class="modeltest2">Will Be Updated Soon</p>
+                </div>
+                <div class="modeltestcard">
+                    <p id="6" class="modeltest"><b>BCS Preliminary Model Test 7</b></p>
+                    <p class="modeltest2">Will Be Updated Soon</p>
+                </div>
+                <div class="modeltestcard">
+                    <p id="7" class="modeltest"><b>BCS Preliminary Model Test 8</b></p>
+                    <p class="modeltest2">Will Be Updated Soon</p>
+                </div>
+                <div class="modeltestcard">
+                    <p id="8" class="modeltest"><b>BCS Preliminary Model Test 9</b></p>
+                    <p class="modeltest2">Will Be Updated Soon</p>
+                </div>
+                <div class="modeltestcard">
+                    <p id="9" class="modeltest"><b>BCS Preliminary Model Test 10</b></p>
+                    <p class="modeltest2">Will Be Updated Soon</p>
+                </div>
+               
+            
+
+            </div>
+
+            <div id="test" style="display:none" onmousedown='return false;' onselectstart='return false;'>
+                <h2>BCS Preliminary Model Test </h2>
+                <p>Below is questions from BCS Preliminary Model Tests. There are 100 questions.25 questions for each
+                    subjects(Bangla, English,Math,General Knowledge). So allocated time would be 60 minutes (1 hour) and
+                    additional 1.5 minutes for preparatio
+                    only. If you find any appropriate answer please leave a message in contacts page. The timing is upto
+                    you to control.
+                </p><br><br><br>
+
+                <div id="tsetquestions" onmousedown='return false;' onselectstart='return false;'
+                    style="font-size:16px">
+
+                </div>
+                <input id="submitans" type="submit" value="Submit Answer" onclick="showAnswer()"
+                    style="font-size:18px;background-color:cadetblue;padding:3px;margin:30px">
+
+                <div id="counttimer" class="modeltimerfixed">
+                    <p id="demo" class="timertext"><b></b></p>
+                </div>
+            </div>
+            <div id="examresult" class="modal2">
+
+                <div class="modal2-content animate" action="modeltest.html">
+                    <div class="imgcontainer2">
+
+                        <span onclick="document.getElementById('examresult').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                        <br>
+                        <h3>Exam Result</h3>
+                    </div>
+
+
+                    <div class="container">
+                        <p>Total Questions 100</p>
+                        <p id="rat">Attempted Questions </p>
+                        <p id="rnat">Not Attempted Questions </p>
+                        <p id="ratc">Correct Answers </p>
+                        <p id="ratw">Wrong Answers </p>
+                        <p id="scor"></p>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="saveResultData()" class="cancelbtn">Save Exam Stats</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="column2">
+            <h4>Search</h4>
+            <script>
+                (function () {
+                    var cx = '004078835377046068037:ea4vn_hh7ia';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:search class="search"></gcse:search>
+            <h4>Notices</h4>
+            <marquee width="100%" direction="up" height="300px" scrollamount="3" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                <div id="notices">
+
+                </div>
+            </marquee>
+            <h4><u>User Counter</u></h4>
+            <h5 style="font-family:serif;" id="totalUser"></h5>
+            <p><br></p>
+            <h4><u>Visits Counter</u></h4>
+            <h5 style="font-family:serif;" id="totalVisits"></h5>
+            <p><br></p>
+            <h4><u>Advertisements</u></h4>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Square Add -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6614834939916976"
+     data-ad-slot="2534306643"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br><br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Square Add -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6614834939916976"
+     data-ad-slot="2534306643"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+               
+        </div>
+    </div>
+    <div class="fb-comments" data-href="https://prelibcsmcqtest.firebaseapp.com/modeltest.html" data-width="100%" data-numposts="10"></div>
+    <div class="footerdiv">
+        <a href="#top">
+
+            <img class="img_shake" src="images/up.png" alt="Move to Top" title="Move to Top" align="right">
+
+        </a>
+        <h3 align="center">BCS Preliminary MCQ Test</h3>
+        <p> Questions, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full
+            correctness of all content. While using this site, you<br> agree to have read and accepted our terms of use,
+            cookie and privacy policy. Copyright 2019-2022 by Refsnes Data. All Rights Reserved.</p>
+        <h3 align="center">www.prelibcsmcqtest.firebaseapp.com</h3>
+    </div>
+    <div id="login_form" class="modal">
+
+        <div class="modal-content animate" action="index.html">
+            <div class="imgcontainer">
+
+                <span onclick="document.getElementById('login_form').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <br>
+                <h2>Login</h2>
+            </div>
+
+
+            <div class="container">
+                <label for="uname"><b>Email</b></label>
+                <input id="email_login" class="signup_form" type="text" placeholder="Enter Email" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input maxlength="14" id="password_login" class="signup_form" type="password"
+                    placeholder="Enter Password" name="psw" required>
+
+                <button class="button_login" type="submit" onclick="Login()">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" id="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('login_form').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </div>
+    </div>
+    <div id="signup_form" class="modal">
+
+        <div class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('signup_form').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <br>
+                <h2>Sign Up</h2>
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input id="username_signup" class="signup_form" type="text" placeholder="Enter Username" name="uname"
+                    required>
+
+                <label for="uname"><b>Email Address</b></label>
+                <input id="email_signup" class="signup_form" type="text" placeholder="Enter Email Address" name="email"
+                    required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="password_signup" maxlength="14" class="signup_form" type="password"
+                    placeholder="Enter Password" name="psw" required>
+
+                <label for="psw"><b>Confirm Password</b></label>
+                <input id="confirm_pass_signup" maxlength="14" class="signup_form" type="password"
+                    placeholder="Enter Password Again" name="psw" required>
+
+                <button class="button_login" type="submit" onclick="Signup()">Sign Up</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" id="sremember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('signup_form').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script>
+        document.getElementById("loader").style.display = "block";
+
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAAqY3AyFDZWxMuVEL86c2UVjovNgouxo0",
+            authDomain: "prelibcsmcqtest.firebaseapp.com",
+            databaseURL: "https://prelibcsmcqtest.firebaseio.com",
+            projectId: "prelibcsmcqtest",
+            storageBucket: "prelibcsmcqtest.appspot.com",
+            messagingSenderId: "825983005556"
+        };
+        firebase.initializeApp(config);
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                document.getElementById('signup_button').style.display = "none";
+                document.getElementById('logout_button').style.display = "block";
+                document.getElementById('login_button').style.display = "none";
+                document.getElementById('profile_button').style.display = "block";
+
+                if (user.uid == "sWcBS3x7xPYtLe24IqqMPj2GMxx2") {
+                    document.getElementById('admin').style.display = "block";
+                }
+
+            } else {
+                document.getElementById('signup_button').style.display = "block";
+                document.getElementById('login_button').style.display = "block";
+
+            }
+        });
+    </script>
+    <script>
+        var DatabaseRef = firebase.database().ref('/Notices');
+        DatabaseRef.on('value', function (snapshot) {
+            snapshot.forEach(function (childSnapshot) {
+                var childData = childSnapshot.val();
+                document.getElementById("notices").innerHTML += "<p>" + childData.title + "</p>";
+            });
+        });
+        var DatabaseRef = firebase.database().ref('/users');
+        DatabaseRef.on('value', function (snapshot) {
+            document.getElementById('totalUser').innerText = snapshot.numChildren() + "  Users";
+        });
+
+        var visitval;
+        var DatabaseRef = firebase.database().ref('/TotalVisits');
+        DatabaseRef.once('value', function (snapshot) {
+            snapshot.forEach(function (childSnapshot) {
+                var childData = childSnapshot.val();
+                document.getElementById("totalVisits").innerText = childData.count + " Visits";
+                visitval = childData.count;
+
+
+            });
+            var updatevisit2 = parseInt(visitval);
+            updatevisit2++;
+            firebase.database().ref('TotalVisits/visits/').set({
+                count: updatevisit2
+            })
+        });
+        function load() {
+            document.getElementById("loader").style.display = "none";
+        }
+        $.getJSON("https://api.ipify.org?format=json", function(data) { 
+      var date=new Date();
+      var time = date.getTime();
+      time= time - (time % 86400000);
+
+      var y = date.getFullYear();
+      var m = date.getMonth();
+      var d = date.getDate();
+      var h = date.getHours();
+      var mn = date.getMinutes();
+      var s = date.getSeconds();
+
+      var miltime=date.getTime();
+
+      var visitDate = d + "/" + m + "/" + y + " at " + h + ":" + mn + ":" + s;
+      var ipAddress=data.ip;
+      ipAddress=ipAddress.split('.').join("");
+      
+      firebase.database().ref('VisitsCounter/' + time+'/'+ipAddress).update({
+        ip: data.ip,
+        vdate: visitDate
+        
+      })
+      firebase.database().ref('VisitsCounter/' + time+'/'+ipAddress+'/'+miltime).set({
+        visitpage: "Model Test"
+        
+      })
+
+    })
+
+    </script>
+    <script type="text/javascript" src="modeltest.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6614834939916976"
+     data-ad-slot="3573605625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+
+User-agent: *
+Allow: /
+
+Sitemap: https://prelibcsmcqtest.firebaseapp.com/sitemap.xml

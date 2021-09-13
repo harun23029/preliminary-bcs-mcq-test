@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="bn" xml:lang="bn">
+
+<head>
+
+    <title>BCS Preliminary MCQ Test quick test exam</title>
+    <link rel="icon" type="image/icon" href="images\bcs.png">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="BCS Preliminary MCQ Test" />
+      <meta property="og:type" content="BCS Preliminary" />
+      <meta property="og:description" content="Here the website named prelibcsmcqtest is made for those who are trying to find online resources to get prepare for bcs examination" />
+      <meta property="og:url" content="https://prelibcsmcqtest.firebaseapp.com/" />
+      <meta property="og:image" content="https://prelibcsmcqtest.firebaseapp.com/images/allbcs.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
+      <script data-ad-client="ca-pub-6614834939916976" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+
+<body oncontextmenu="return false" onload="load();">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+
+
+    <div style="padding:20px" class="loader" id="loader"></div>
+
+
+    <div class="maindiv" id="top">
+        <img src="images\bcs.png" height="125" width="125">
+        <p>
+            <h1 style="color:beige">Online test for BCS Preliminary</h1>
+        </p>
+    </div>
+    <div class="topnav" id="navbar">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">KNOWLEDGE TEST
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="quicktest.html" class="active">Quick Test</a>
+                <a href="modeltest.html">Model Test</a>
+                <a href="comtest.html">Competetive Test</a>
+            </div>
+
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> QUESTION BANK
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="previousyear.html">Previous Year Questions</a>
+                <a href="subjective.html">Subjective Questions</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> GUIDELINES
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="allaboutbcs.html">All About BCS</a>
+                <a href="motivational.html">Motivational Speechs</a>
+            </div>
+        </div>
+        <a href="contact.html">CONTACTS</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction2()">&#9776;</a>
+
+    </div>
+
+    <script>
+        function myFunction2() {
+            var x = document.getElementById("navbar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <h1 id="qq">Quick Test<br></h1>
+    <marquee width="100%" direction="left" scrollamount="3" bgcolor="#11ffe0" onmouseover="this.stop();"
+        onmouseout="this.start();">
+        <p>***** If you find any information wrong please inform us in the contact page or you can comment at the bottom of the page ******</p>
+    </marquee>
+    <hr class="hrline3">
+    <div class="row">
+        <div class="column3" style="background-color:rgba(196, 196, 186, 0.133);">
+            <br>
+            <br>
+            <br>
+            <div style="margin-left:100px">
+                <h3>Question: </h3>
+                <p id="qtn" class="quicktestquestion"></p>
+                <input id="btna" value="a" type="radio" name="option" style="display:inline">
+                <p id="a" style="display:inline;cursor:pointer" onclick="selectA()"></p> <br><br>
+                <input id="btnb" value="b" type="radio" name="option" style="display:inline">
+                <p id="b" style="display:inline;cursor:pointer" onclick="selectB()"></p><br><br>
+                <input id="btnc" value="c" type="radio" name="option" style="display:inline">
+                <p id="c" style="display:inline;cursor:pointer" onclick="selectC()"></p><br><br>
+                <input id="btnd" value="d" type="radio" name="option" style="display:inline">
+                <p id="d" style="display:inline;cursor:pointer" onclick="selectD()"></p><br><br><br>
+                <input type="submit" value="Submit Answer" onclick="showAnswer()"
+                    style="font-size:18px;background-color:cadetblue;padding:3px;margin:3px"> <input
+                    style="font-size:18px;background-color:cadetblue;padding:3px;margin:3px" type="submit" value="Next"
+                    onclick="getQuestion()">
+                <p id="rans" style="display:none;color: blueviolet"><b>&#9989; Your Ans is Correct</b></p>
+                <p id="wans" style="display:none;color: red"><b>&#10062; Your Ans is Wrong</b></p>
+                <p id="ans" style="display:none"> Correct Ans: Harun</p>
+                <p id="cans" style="display:none"> Correct Ans: Harun</p>
+                <p id="totcil" style="display:none"></p>
+            </div>
+            <br>
+           
+            
+            
+
+
+        </div>
+        <div class="column2">
+            <h4>Search</h4>
+            <script>
+                (function () {
+                    var cx = '004078835377046068037:ea4vn_hh7ia';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:search class="search"></gcse:search>
+            <h4>Notices</h4>
+            <marquee width="100%" direction="up" height="300px" scrollamount="3" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                <div id="notices">
+
+                </div>
+            </marquee>
+            <h4><u>User Counter</u></h4>
+            <h5 style="font-family:serif;" id="totalUser"></h5>
+            <p><br></p>
+            <h4><u>Visits Counter</u></h4>
+            <h5 style="font-family:serif;" id="totalVisits"></h5>
+            <p><br></p>
+            <h4><u>Advertisements</u></h4>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Square Add -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6614834939916976"
+     data-ad-slot="2534306643"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br><br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Square Add -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6614834939916976"
+     data-ad-slot="2534306643"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div>
+    </div>
+    <div class="fb-comments" data-href="https://prelibcsmcqtest.firebaseapp.com/quicktest.html" data-width="100%" data-numposts="10"></div>
+    <div class="footerdiv">
+        <a href="#top">
+
+            <img class="img_shake" src="images/up.png" alt="Move to Top" title="Move to Top" align="right">
+
+        </a>
+        <h3 align="center">BCS Preliminary MCQ Test</h3>
+        <p> Questions, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full
+            correctness of all content. While using this site, you<br> agree to have read and accepted our terms of use,
+            cookie and privacy policy. Copyright 2019-2022 by Refsnes Data. All Rights Reserved.</p>
+        <h3 align="center">www.prelibcsmcqtest.firebaseapp.com</h3>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script>
+        document.getElementById("loader").style.display = "block";
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAAqY3AyFDZWxMuVEL86c2UVjovNgouxo0",
+            authDomain: "prelibcsmcqtest.firebaseapp.com",
+            databaseURL: "https://prelibcsmcqtest.firebaseio.com",
+            projectId: "prelibcsmcqtest",
+            storageBucket: "prelibcsmcqtest.appspot.com",
+            messagingSenderId: "825983005556"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        document.getElementById('qq').scrollIntoView();
+        var DatabaseRef = firebase.database().ref('/Notices');
+        DatabaseRef.on('value', function (snapshot) {
+            snapshot.forEach(function (childSnapshot) {
+                var childData = childSnapshot.val();
+                document.getElementById("notices").innerHTML += "<p>" + childData.title + "</p>";
+            });
+        });
+        var DatabaseRef = firebase.database().ref('/users');
+        DatabaseRef.on('value', function (snapshot) {
+            document.getElementById('totalUser').innerText = snapshot.numChildren() + "  Users";
+        });
+
+        var visitval;
+        var DatabaseRef = firebase.database().ref('/TotalVisits');
+        DatabaseRef.once('value', function (snapshot) {
+            snapshot.forEach(function (childSnapshot) {
+                var childData = childSnapshot.val();
+                document.getElementById("totalVisits").innerText = childData.count + " Visits";
+                visitval = childData.count;
+
+
+            });
+            var updatevisit2 = parseInt(visitval);
+            updatevisit2++;
+            firebase.database().ref('TotalVisits/visits/').set({
+                count: updatevisit2
+            })
+        });
+        function load() {
+            document.getElementById("loader").style.display = "none";
+        }
+        $.getJSON("https://api.ipify.org?format=json", function(data) { 
+      var date=new Date();
+      var time = date.getTime();
+      time= time - (time % 86400000);
+
+      var y = date.getFullYear();
+      var m = date.getMonth();
+      var d = date.getDate();
+      var h = date.getHours();
+      var mn = date.getMinutes();
+      var s = date.getSeconds();
+
+      var miltime=date.getTime();
+
+      var visitDate = d + "/" + m + "/" + y + " at " + h + ":" + mn + ":" + s;
+      var ipAddress=data.ip;
+      ipAddress=ipAddress.split('.').join("");
+      
+      firebase.database().ref('VisitsCounter/' + time+'/'+ipAddress).update({
+        ip: data.ip,
+        vdate: visitDate
+        
+      })
+      firebase.database().ref('VisitsCounter/' + time+'/'+ipAddress+'/'+miltime).set({
+        visitpage: "Quick Test"
+        
+      })
+
+    })
+    </script>
+    <script type="text/javascript" src="quicktest.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6614834939916976"
+     data-ad-slot="3573605625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</body>
+
+
+
+</html>

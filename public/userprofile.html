@@ -1,0 +1,182 @@
+
+<html>
+    <head>
+    <title>BCS Preliminary MCQ Test user profile</title>
+    <link rel="icon" type="image/icon" href="images\bcs.png">
+    <link rel="stylesheet" href="style_profile.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="BCS Preliminary MCQ Test" />
+      <meta property="og:type" content="BCS Preliminary" />
+      <meta property="og:description" content="Here the website named prelibcsmcqtest is made for those who are trying to find online resources to get prepare for bcs examination" />
+      <meta property="og:url" content="https://prelibcsmcqtest.firebaseapp.com/" />
+      <meta property="og:image" content="https://prelibcsmcqtest.firebaseapp.com/images/allbcs.jpg" />
+      <script data-ad-client="ca-pub-6614834939916976" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body oncontextmenu="return false">
+    <div class="topdiv">
+    <a href="index.html"><img src="images/back.png" class="back" alt="Back" title="Back To Home"></a>
+    <h3 class="back"">Back To Home</h3>
+    </div>
+    <div class=" row">
+    <p>.</p>
+    <div class="column1">
+    <div class="card">
+    <img id="pp" class="profile" src="images/pp.jpg" title="profile picture" alt="profile picture">
+    <h3 align="center" id="name" class="b"></h3>
+    <br>
+    </div>
+    <div class="card">
+    <div class="probio">
+    <p><b>Bio: </b></p>
+    <p id="bio" class="biop"></p>
+    </div>
+    </div>
+    <div class="card">
+    <p><b>Email: </b></p>
+    <p id="email" class="probio"></p>
+    <hr>
+    <P><b>Education:</b></P>
+    <p id="edu" class="probio"></p>
+    <hr>
+    <P><b>Works:</b></P>
+    <p id="work" class="probio"></p>
+    </div>
+    </div>
+    <div class="column2">
+    <h3>Posts Statistics</h3>
+    <p class="w">You have made 12 posts.</p>
+    <br>
+    <h3>Model Test Statistics</h3>
+    <p class="w">Total Exams-10</p>
+    <table title="Model Test Stats">
+    <tr>
+    <th>Model Test</th>
+    <th>Bangla </th>
+    <th>English</th>
+    <th>General Knowledge</th>
+    <th>Math</th>
+    <th>Total</th>
+    <th>Peformance</th>
+    </tr>
+    <tr>
+    <td>Model Test 1</td>
+    <td>35</td>
+    <td>40</td>
+    <td>38</td>
+    <td>42</td>
+    <td>155</td>
+    <td>80%</td>
+    </tr>
+    <tr>
+    <td>Model Test 2</td>
+    <td>35</td>
+    <td>40</td>
+    <td>38</td>
+    <td>42</td>
+    <td>155</td>
+    <td>80%</td>
+    </tr>
+    </table>
+    <h3>Competitive Test Statistics</h3>
+    <p class="w">Total Exams-10</p>
+    <table title="Competitive test stats">
+    <tr>
+    <th>Competitive Test</th>
+    <th>Bangla </th>
+    <th>English</th>
+    <th>General Knowledge</th>
+    <th>Math</th>
+    <th>Total</th>
+    <th>Peformance</th>
+    <th>Rank</th>
+    </tr>
+    <tr>
+    <td>Test 1</td>
+    <td>35</td>
+    <td>40</td>
+    <td>38</td>
+    <td>42</td>
+    <td>155</td>
+    <td>80%</td>
+    <td>12</td>
+    </tr>
+    </table>
+    </div>
+    </div>
+    <div class="footerdiv">
+      <a href="#top">
+
+        <img class="img_shake" src="images/up.png" alt="Move to Top" title="Move to Top" align="right">
+
+      </a>
+      <h3 align="center">BCS Preliminary MCQ Test</h3>
+      <p class="w"> Questions, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full
+        correctness of all content. While using this site, you<br> agree to have read and accepted our terms of use,
+        cookie and privacy policy. Copyright 2019-2022 by Refsnes Data. All Rights Reserved.</p>
+      <h3 align="center">www.prelibcsmcqtest.firebaseapp.com</h3>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyAAqY3AyFDZWxMuVEL86c2UVjovNgouxo0",
+    authDomain: "prelibcsmcqtest.firebaseapp.com",
+    databaseURL: "https://prelibcsmcqtest.firebaseio.com",
+    projectId: "prelibcsmcqtest",
+    storageBucket: "prelibcsmcqtest.appspot.com",
+    messagingSenderId: "825983005556"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script>
+    var loggedinuserid;
+    var currentuser;
+    firebase.auth().onAuthStateChanged(function (user) {
+    loggedinuserid = user.uid;
+    loggedinuserid = "id" + loggedinuserid;
+    if (user) {
+    var DatabaseRef2 = firebase.database().ref('/UserProfile' + '/' + loggedinuserid);
+    DatabaseRef2.on('value', function (snapshot2) {
+    var childData = snapshot2.val();
+    currentuser = childData.id;
+    var DatabaseRef = firebase.database().ref('/users');
+    DatabaseRef.on('value', function (snapshot) {
+    snapshot.forEach(function (childSnapshot) {
+    var childData = childSnapshot.val();
+    if (currentuser == childData.UserID) {
+        var storage = firebase.storage().ref().child('img/'+currentuser);
+    storage.getDownloadURL().then(function (url) {
+    document.getElementById('pp').src = url;
+    });
+    document.getElementById("name").innerText = childData.FirstName;
+    document.getElementById("bio").innerText = childData.bio;
+    document.getElementById("email").innerText = childData.Email;
+    document.getElementById("edu").innerText = childData.edu;
+    document.getElementById("work").innerText = childData.work;
+
+    
+    }
+    });
+    });
+    });
+    }
+    });
+    
+    
+    </script>
+    <script type="text/javascript" src="userprofile.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ad1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6614834939916976"
+     data-ad-slot="3573605625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </body>
+    </html>
